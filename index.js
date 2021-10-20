@@ -3,7 +3,9 @@ const app = express();
 const mongoose = require('mongoose');
 const routes = require('./routes/routes')
 const ejs  = require('ejs')
+const methodOverride = require('method-override')
 // middlewares
+app.use(methodOverride('_method'))
 app.use(express.static('public'))
 app.use(express.urlencoded({extended:false}))
 app.set('view engine', 'ejs')

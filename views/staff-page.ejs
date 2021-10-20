@@ -15,9 +15,10 @@
         <p><span>lastname: </span> <%= staff.lastName %>  </p>
         <p><span>surname: </span> <%= staff.surName %>  </p>
         <p><span>department: </span> <%= staff.department %>  </p>
+        <p><span>leave status: </span> <%= staff.accept %>   </p>
         </div>
         <div class="leave">
-            <h1></h1>
+            <a href="/leave/<%= staff.id %>" class="btn bg-green-500 inline-block mt-2 text-white hover:text-black hover:bg-green-800">take a leave</a>
         </div>
     </div>
 

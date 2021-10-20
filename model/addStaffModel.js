@@ -19,7 +19,15 @@ const staffSchema = new mongoose.Schema({
     },
     department:{
         type: String,
-        required: true
+    },
+    reason:{
+        type: String,
+    },
+    accept:{
+        type: String,
+    },
+    date:{
+        type: String
     },
     password:{
         type: String,
